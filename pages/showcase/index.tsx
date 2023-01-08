@@ -115,14 +115,14 @@ export default function IndexShowcasePage() {
         <div className="ml-auto">
           <label
             htmlFor="sort-by"
-            className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+            className="mb-2 block text-right text-sm font-medium text-gray-900 dark:text-white"
           >
-            Sort By:
+            Sort By
           </label>
           <select
             name="sort-by"
             id="sort-by"
-            className="focusable w-full cursor-pointer rounded px-2 py-1 text-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+            className="focusable w-full cursor-pointer rounded bg-gray-100 px-2 py-1 text-gray-600 shadow-md dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
             onChange={handle}
           >
             <option value="RANK-DESC">Rank - DESC</option>
@@ -158,7 +158,7 @@ export default function IndexShowcasePage() {
                        * Error: Text content does not match server-rendered HTML.
                        * See more info here: https://nextjs.org/docs/messages/react-hydration-error
                        */
-                      views={Math.floor(Math.random() * 1)}
+                      views={Math.floor(Math.random() * 273)}
                       image={project.image.covers[0]}
                     />
                   </div>

@@ -1,11 +1,12 @@
-import useSWR from 'swr'
+// import useSWR from 'swr'
 
 import classNames from 'classnames'
-import fetcher from 'lib/fetcher'
-import { Views } from 'lib/types'
+// import fetcher from 'lib/fetcher'
+// import { Views } from 'lib/types'
 import { LinkWrapped } from './atoms'
 import Image from 'next/image'
 import { ReactNode } from 'react'
+import { CONSTS } from 'config'
 
 interface Props {
   title: string
@@ -25,9 +26,9 @@ export default function ProjectPostCard({
   slug,
   gradient,
   views,
-  image = { alt: 'Project Cover', src: '/static/hai.png' },
+  image = { alt: 'Project Cover', src: CONSTS.UTILS.DEFAULT_COVER },
 }: Props) {
-  if (image.src === '') image = { ...image, src: '/static/hai.png' }
+  if (image.src === '') image = { ...image, src: CONSTS.UTILS.DEFAULT_COVER }
 
   return (
     <div className="flex w-full flex-col gap-5">
@@ -47,6 +48,9 @@ export default function ProjectPostCard({
             src={image.src}
             alt={`${image.alt} project cover`}
             className="rounded-xl p-1 grayscale filter transition-all group-hover:grayscale-0 group-focus-visible:grayscale-0"
+            blurDataURL={CONSTS.UTILS.LQIP}
+            placeholder="blur"
+            quality={20}
             fill
           />
         </div>

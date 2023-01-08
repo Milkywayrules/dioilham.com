@@ -37,7 +37,7 @@ export default function Home({}: InferGetServerSidePropsType<typeof getServerSid
 
                 <h2 className="mb-4 text-gray-700 dark:text-gray-200">
                   Front-end Developer of Software Engineer at{' '}
-                  <LinkWrapped href={CONSTS.BIO.WORK.SECONDARY.URL}>
+                  <LinkWrapped href={CONSTS.BIO.WORK.SECONDARY.URL} target="_blank">
                     {CONSTS.BIO.WORK.SECONDARY.TEXT}
                   </LinkWrapped>
                 </h2>
@@ -83,7 +83,7 @@ export default function Home({}: InferGetServerSidePropsType<typeof getServerSid
                        * Error: Text content does not match server-rendered HTML.
                        * See more info here: https://nextjs.org/docs/messages/react-hydration-error
                        */
-                      views={Math.floor(Math.random() * 1)}
+                      views={Math.floor(Math.random() * 273)}
                       gradient={project.gradient}
                       image={project.image.covers[0]}
                     />

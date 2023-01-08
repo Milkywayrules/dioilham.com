@@ -42,7 +42,9 @@ export default function Footer() {
         <div className="flex flex-col space-y-4">
           <ExternalLink href={CONSTS.SOSIAL.IG.URL}>{CONSTS.SOSIAL.IG.NAME}</ExternalLink>
           <ExternalLink href={CONSTS.SOSIAL.GITHUB.URL}>{CONSTS.SOSIAL.GITHUB.NAME}</ExternalLink>
-          <ExternalLink href={CONSTS.SOSIAL.LINKEDIN.URL}>{CONSTS.SOSIAL.LINKEDIN.NAME}</ExternalLink>
+          <ExternalLink href={CONSTS.SOSIAL.LINKEDIN.URL}>
+            {CONSTS.SOSIAL.LINKEDIN.NAME}
+          </ExternalLink>
           <ExternalLink href={CONSTS.SOSIAL.YT.URL}>{CONSTS.SOSIAL.YT.NAME}</ExternalLink>
         </div>
 

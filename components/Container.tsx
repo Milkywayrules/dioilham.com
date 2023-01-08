@@ -98,7 +98,7 @@ export default function Container(props: any) {
           <button
             aria-label="Toggle Dark Mode"
             type="button"
-            className="flex h-9 w-9 items-center justify-center rounded-lg bg-gray-200 ring-gray-300  transition-all hover:ring-2 ringte  dark:bg-gray-600"
+            className="ringte flex h-9 w-9 items-center justify-center rounded-lg bg-gray-200 ring-gray-300 transition-all hover:ring-2 dark:bg-gray-600"
             onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
           >
             {mounted && (

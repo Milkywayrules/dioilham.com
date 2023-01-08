@@ -30,7 +30,9 @@ export default function ResumePage() {
             Resume / CV 📃
           </h1>
 
-          <p className="mt-4 text-gray-600 dark:text-gray-400">Here is my latest resume / cv 🚀</p>
+          <p className="mt-4 text-gray-600 dark:text-gray-400">
+            Here is my latest resume / cv written on English & Indonesian 🚀
+          </p>
 
           <div className="mt-8 flex w-full flex-row gap-4">
             <Btn href="/resume/dl-with-certificates">
@@ -56,7 +58,33 @@ export default function ResumePage() {
             </Btn>
           </div>
 
-          <p className="mt-8 dark:text-gray-500">Last update: {updatedAt}</p>
+          <p className="mt-8 text-gray-300 dark:text-gray-500">Last update: {updatedAt}</p>
+
+          <div className="mt-12 flex flex-col text-gray-300 dark:text-gray-500">
+            <p className="">Click Gdrive links below if the above button didn't work</p>
+
+            <div className="mt-2 flex">
+              <LinkWrapped
+                mode="text"
+                href="https://drive.google.com/file/d/1cZLQ2CJesFsxqk0Yk9LE7p7b2u4-eJve/view?usp=sharing"
+                target="_blank"
+                className="!underline underline-offset-4"
+              >
+                with certificates
+              </LinkWrapped>
+            </div>
+
+            <div className="mt-1 flex">
+              <LinkWrapped
+                mode="text"
+                href="https://drive.google.com/file/d/1fp4enOQE5wI41y0OjEPPvgkrb8dO1LAP/view?usp=sharing"
+                target="_blank"
+                className="!underline underline-offset-4"
+              >
+                without certificates
+              </LinkWrapped>
+            </div>
+          </div>
         </div>
       </div>
     </Container>

@@ -1,16 +1,10 @@
+import type { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next'
 import Image from 'next/image'
 import { Suspense, useEffect, useState } from 'react'
 
-import { LinkWrapped } from 'components/atoms'
-import { CONSTS, Project, projectMap } from 'config'
-import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next'
-import BlogPostCard from '../../components/BlogPostCard'
-import Container from '../../components/Container'
-import Subscribe from '../../components/Subscribe'
-import VideoCard from '../../components/VideoCard'
-import ProjectPostCard from 'components/ProjectPostCard'
-import classNames from 'classnames'
 import LoadingSpinner from 'components/LoadingSpinner'
+import { CONSTS, Project, projectMap } from 'config'
+import Container from '../../components/Container'
 
 export async function getServerSideProps({ params }: GetServerSidePropsContext) {
   const project = Object.values(projectMap).find(project => project.slug === params.slug)
@@ -35,8 +29,6 @@ export default function SlugShowcasePage({
     projectSet(Object.values(projectMap).find(project => project.slug === params.slug))
   }, [params.slug])
 
-  console.log(project)
-
   return (
     <Suspense fallback={'Loading...'}>
       <Container
@@ -52,9 +44,17 @@ export default function SlugShowcasePage({
             <div className="flex flex-col gap-12">
               <div className="relative aspect-video rounded-xl shadow-xl shadow-teal-300/10 transition-shadow hover:shadow-teal-300/30 dark:shadow-teal-800/10 dark:hover:shadow-teal-800/30">
                 <Image
-                  src={project.image.covers[0].src}
+                  src={
+                    project.image.covers[0].src === ''
+                      ? CONSTS.UTILS.DEFAULT_COVER
+                      : project.image.covers[0].src
+                  }
                   alt={`${project.image.covers[0].alt} project cover`}
                   className="rounded-xl"
+                  blurDataURL={CONSTS.UTILS.LQIP}
+                  placeholder="blur"
+                  title={`${project.image.covers[0].alt} project cover`}
+                  priority
                   fill
                 />
               </div>
