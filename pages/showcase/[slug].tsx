@@ -1,4 +1,4 @@
-import type { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next'
+import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 import Image from 'next/image'
 import { Suspense, useEffect, useState } from 'react'
 
@@ -6,7 +6,16 @@ import LoadingSpinner from 'components/LoadingSpinner'
 import { CONSTS, Project, projectMap } from 'config'
 import Container from '../../components/Container'
 
-export async function getServerSideProps({ params }: GetServerSidePropsContext) {
+export async function getStaticPaths() {
+  const paths = Object.values(projectMap).map(p => ({ params: { slug: p.slug } }))
+
+  return {
+    paths: paths,
+    fallback: 'blocking', // can also be true or false
+  }
+}
+
+export async function getStaticProps({ params }: GetStaticPropsContext) {
   const project = Object.values(projectMap).find(project => project.slug === params.slug)
 
   if (!project) {
@@ -16,13 +25,13 @@ export async function getServerSideProps({ params }: GetServerSidePropsContext) 
   }
 
   return {
-    props: { params }, // will be passed to the page component as props
+    props: { params },
   }
 }
 
 export default function SlugShowcasePage({
   params,
-}: InferGetServerSidePropsType<typeof getServerSideProps>) {
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   const [project, projectSet] = useState<Project>()
 
   useEffect(() => {
