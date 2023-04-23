@@ -42,8 +42,8 @@ export default function Container(props: any) {
   const { children, ...customMeta } = props
   const router = useRouter()
   const meta = {
-    title: 'Dio Ilham – Developer, creator, wizard 🧙‍♂️.',
-    description: `Front-end developer, Typescript enthusiast, and wizard 🧙‍♂️.`,
+    title: 'Dio Ilham Dj – Developer, creator, wizard 🧙‍♂️.',
+    description: `Dio Ilham Dj – Front-end developer, Typescript enthusiast, and wizard 🧙‍♂️.`,
     image: 'https://dioilham.com/static/images/dio-banner.png',
     type: 'website',
     ...customMeta,
@@ -64,7 +64,7 @@ export default function Container(props: any) {
 
         <meta property="og:url" content={`https://dioilham.com${router.asPath}`} />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Dio Ilham" />
+        <meta property="og:site_name" content="Dio Ilham Dj" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />

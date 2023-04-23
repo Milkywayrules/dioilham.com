@@ -23,7 +23,7 @@ export default function ResumePage() {
   const updatedAt = new Date(1665668198545).toLocaleString() // 10/13/2022, 8:36:38 PM
 
   return (
-    <Container title="Resume / CV – Dio Ilham" description="Get Dio Ilham's latest resume and CV.">
+    <Container title="Resume / CV – Dio Ilham Dj" description="Get Dio Ilham's latest resume and CV.">
       <div className="mx-auto w-full max-w-2xl">
         <div className="mb-16 flex flex-col items-start justify-center">
           <h1 className="text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">

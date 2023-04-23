@@ -27,7 +27,7 @@ const CONSTS = {
     },
   },
   BIO: {
-    NAME: 'Dio Ilham',
+    NAME: 'Dio Ilham Dj',
     WORK: {
       MAIN: {
         URL: 'https://caroline.id/',

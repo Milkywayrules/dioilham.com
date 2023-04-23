@@ -22,7 +22,7 @@ const CAROLINE = CONSTS.BIO.WORK.MAIN
 
 export default function About() {
   return (
-    <Container title="About – Dio Ilham">
+    <Container title="About – Dio Ilham Dj">
       <div className="mx-auto mb-16 flex w-full max-w-2xl flex-col items-start justify-center">
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
           About Me

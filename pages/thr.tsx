@@ -15,7 +15,7 @@ const rendererCountdown = ({
 export default function ThrPage() {
   return (
     <Container
-      title="THR – Dio Ilham"
+      title="THR – Dio Ilham Dj"
       description="Thoughts on the software industry, programming, tech, videography, music, and my personal life."
     >
       <div className="mx-auto mb-16 flex max-w-2xl flex-col items-start justify-center">

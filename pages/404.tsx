@@ -3,7 +3,7 @@ import Container from 'components/Container'
 
 export default function NotFound() {
   return (
-    <Container title="404 – Dio Ilham">
+    <Container title="404 – Dio Ilham Dj">
       <div className="mx-auto mb-16 flex max-w-2xl flex-col items-start justify-center">
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
           451 – Unavailable For Legal Reasons

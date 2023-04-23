@@ -41,7 +41,7 @@ export default function SlugShowcasePage({
   return (
     <Suspense fallback={'Loading...'}>
       <Container
-        title="Dashboard – Dio Ilham"
+        title="Dashboard – Dio Ilham Dj"
         description="My personal dashboard, built with Next.js API routes deployed as serverless functions."
       >
         <div className="mx-auto mb-16 flex max-w-4xl flex-col items-start justify-center">

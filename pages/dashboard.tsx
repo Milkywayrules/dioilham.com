@@ -9,7 +9,7 @@ import TopTracks from 'components/TopTracks'
 export default function Dashboard() {
   return (
     <Container
-      title="Dashboard – Dio Ilham"
+      title="Dashboard – Dio Ilham Dj"
       description="My personal dashboard, built with Next.js API routes deployed as serverless functions."
     >
       <div className="mx-auto mb-16 flex max-w-2xl flex-col items-start justify-center">

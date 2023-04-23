@@ -87,7 +87,7 @@ export default function IndexShowcasePage() {
 
   return (
     <Container
-      title="Project Showcase – Dio Ilham"
+      title="Project Showcase – Dio Ilham Dj"
       description="My personal dashboard, built with Next.js API routes deployed as serverless functions."
     >
       <div className="mx-auto mb-8 flex max-w-2xl flex-col items-start justify-center">

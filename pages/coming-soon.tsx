@@ -3,7 +3,7 @@ import Container from 'components/Container'
 
 export default function ComingSoon() {
   return (
-    <Container title="Coming Soon – Dio Ilham">
+    <Container title="Coming Soon – Dio Ilham Dj">
       <div className="mx-auto mb-16 mt-1 flex max-w-2xl flex-col items-start justify-center">
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
           Coming Very Soon 🤗
