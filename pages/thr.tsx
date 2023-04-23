@@ -40,7 +40,7 @@ export default function ThrPage() {
               Pas tuh, abis subuhan trus buka IG, yakan? Kalo ga subuhan juga yaudah sih.
             </li>
             <li className="">
-              Reply story yg barusan, isinya kurang lebih gini
+              Reply story yg barusan, <strong className='dark:text-gray-300 text-gray-700'><i>reply-nya mulai jam 5, kalo sebelum itu ga diitung ok</i></strong>, isinya kurang lebih gini
               <br />
               (pokoknya nomornya dipisah biar gampang copas-nya):
               <div className="">
