@@ -12,20 +12,25 @@ const interVariable = Inter()
 export default function App({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <>
-      <Head>
+      {/* <Head>
         <script
           async
           defer
           data-website-id="2a4410ee-2d77-42a7-ae81-88244b97e73b"
           src="https://umami-production-79bd.up.railway.app/script.js"
         ></script>
-      </Head>
+      </Head> */}
       {/* <Script
         async
         defer
         data-website-id="2a4410ee-2d77-42a7-ae81-88244b97e73b"
         src="https://umami-production-79bd.up.railway.app/script.js"
       /> */}
+      <Script
+        data-website-id="2a4410ee-2d77-42a7-ae81-88244b97e73b"
+        src="https://umami-production-79bd.up.railway.app/script.js"
+        strategy="lazyOnload"
+      />
 
       <ThemeProvider attribute="class">
         <main className={interVariable.className}>
