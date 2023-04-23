@@ -158,37 +158,79 @@ export default function Home() {
 
         <section>
           <h3 className="mb-4 text-2xl font-bold tracking-tight text-black dark:text-white md:text-4xl">
-            Learn React & Next.js
+            Some of my fav ngoding videos!
           </h3>
 
           <p className="mb-4 text-gray-600 dark:text-gray-400">
-            Build and deploy a modern SaaS application using the most popular open-source software.
-            This course is 12 hours long and is completely live streamed.
+            These are some of them, not in any order just randomly picked. Mostly about Front-end,
+            but it consists some from design and backend too.
           </p>
 
           <VideoCard
             index="01"
-            href="https://www.youtube.com/watch?v=MxR5I5_hOKk&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=2"
-            length="1:02:45"
-            title="Introduction to React 2025"
+            href="https://www.youtube.com/watch?v=T-pr-rZgMlQ&list=LL&index=1&pp=gAQBiAQB"
+            length="22:00"
+            title="Building an iOS Animated Toggle with React Aria Components and Tailwind CSS [Sam Selikoff]"
           />
           <VideoCard
             index="02"
-            href="https://www.youtube.com/watch?v=AGl52moyISU&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=3"
-            length="54:22"
-            title="Firestore, Chakra UI, Absolute Imports"
+            href="https://www.youtube.com/watch?v=hubQQ3F337A&list=LL&index=42&pp=gAQBiAQB"
+            length="5:45"
+            title="Use Maps more and Objects less [Steve (Builder.io)]"
           />
           <VideoCard
             index="03"
-            href="https://www.youtube.com/watch?v=3g6-v3_BNbM&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=4"
-            length="1:08:30"
-            title="Designing & Building the Dashboard"
+            href="https://www.youtube.com/watch?v=lj37QZ047f8&list=LL&index=45&pp=gAQBiAQB"
+            length="30:14"
+            title="Animating SVG with the Awesome GSAP 3.0 [DesignCourse]"
           />
           <VideoCard
             index="04"
-            href="https://www.youtube.com/watch?v=u8iv_yhSRI8&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=5"
-            length="1:13:45"
-            title="Firebase Admin with Next.js + SWR"
+            href="https://www.youtube.com/watch?v=p8CsotWUas0&list=LL&index=46&pp=gAQBiAQB"
+            length="27:11"
+            title="Animating a Radix Dropdown with Framer Motion [Sam Selikoff]"
+          />
+          <VideoCard
+            index="05"
+            href="https://www.youtube.com/watch?v=3FbYrkDzgd4&list=LL&index=63&pp=gAQBiAQB"
+            length="11:24"
+            title="MotionPathPlugin by GreenSock [GreenSockLearning]"
+          />
+          <VideoCard
+            index="06"
+            href="https://www.youtube.com/watch?v=zrPVTf761OI&list=LL&index=65&pp=gAQBiAQB"
+            length="22:07"
+            title="Astro Crash Course in 20 Minutes! [Coding in Public]"
+          />
+          <VideoCard
+            index="07"
+            href="https://www.youtube.com/watch?v=u9ECps9b664&list=LL&index=59&pp=gAQBiAQB"
+            length="8:09"
+            title="When M1 DESTROYS a RTX card for Machine Learning | MacBook Pro vs Dell XPS 15 [Alex Ziskind]"
+          />
+          <VideoCard
+            index="08"
+            href="https://www.youtube.com/watch?v=elvwguckWjQ&list=LL&index=2&t=615s&pp=gAQBiAQB"
+            length="12:19"
+            title="This Open-Source NextJS Project is a Game-Changer [Josh tried coding]"
+          />
+          <VideoCard
+            index="09"
+            href="https://www.youtube.com/watch?v=I6ypD7qv3Z8&t=2642s"
+            length="13:59:03"
+            title="Fullstack React GraphQL TypeScript Tutorial [Ben Awad]"
+          />
+          <VideoCard
+            index="10"
+            href="https://www.youtube.com/watch?v=5-1LM2NySR0&t=12s"
+            length="36:39"
+            title="You still use Redux? [Theo - t3․gg]"
+          />
+          <VideoCard
+            index="11"
+            href="https://www.youtube.com/playlist?list=PLNqp92_EXZBJYFrpEzdO2EapvU0GOJ09n"
+            length="Playlist"
+            title="No BS TS [Jack Herrington]"
           />
 
           <div className="flex">
