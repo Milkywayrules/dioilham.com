@@ -32,10 +32,12 @@ export default function ThrPage() {
         </p>
 
         <div className="mb-4 text-gray-600 dark:text-gray-400">
-          <ol className="list-inside list-decimal space-y-3">
+          <ol className="list-inside list-decimal space-y-4">
             <li className="">
               Berlaku mulai 24 April 2023, jam 05.00 pagi, mungkin ga semua kebagian karena limited
               yes (04.59 - ❌ ; 05.00 - ✅)
+              <br />
+              Pas tuh, abis subuhan trus buka IG, yakan? Kalo ga subuhan juga yaudah sih.
             </li>
             <li className="">
               Reply story yg barusan, isinya kurang lebih gini
