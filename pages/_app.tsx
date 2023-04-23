@@ -5,18 +5,27 @@ import { ThemeProvider } from 'next-themes'
 import { Inter } from '@next/font/google'
 import { Analytics } from '@vercel/analytics/react'
 import Script from 'next/script'
+import Head from 'next/head'
 
 const interVariable = Inter()
 
 export default function App({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <>
-      <Script
+      <Head>
+        <script
+          async
+          defer
+          data-website-id="2a4410ee-2d77-42a7-ae81-88244b97e73b"
+          src="https://umami-production-79bd.up.railway.app/script.js"
+        ></script>
+      </Head>
+      {/* <Script
         async
         defer
         data-website-id="2a4410ee-2d77-42a7-ae81-88244b97e73b"
         src="https://umami-production-79bd.up.railway.app/script.js"
-      />
+      /> */}
 
       <ThemeProvider attribute="class">
         <main className={interVariable.className}>
