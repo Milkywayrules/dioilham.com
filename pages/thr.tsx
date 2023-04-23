@@ -52,6 +52,9 @@ export default function ThrPage() {
               </div>
             </li>
             <li className="">
+              Kalo bisa Gopay, Ovo, Shopeepay, or BCA. Biar gabayar 6500+++ buat transfernya :)
+            </li>
+            <li className="">
               Yaudah, selesai, tungguin aja,
               <br />
               InsyaAllah Anda beruntung dapet rejeki di pagi hari ygy
