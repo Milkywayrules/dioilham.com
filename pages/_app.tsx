@@ -26,6 +26,12 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           src="https://umami-production-79bd.up.railway.app/script.js"
           data-website-id="2a4410ee-2d77-42a7-ae81-88244b97e73b"
         ></script> */}
+        {/* <Script
+          async
+          defer
+          data-website-id={process.env.NEXT_PUBLIC_UMAMI__URL__TRACKER}
+          src={GLOBAL_URL.be.umami}
+        /> */}
       </main>
     </ThemeProvider>
   )
