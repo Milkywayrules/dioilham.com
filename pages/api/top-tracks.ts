@@ -78,7 +78,7 @@ export default async function handler(req: NextRequest) {
 
   const isDev = process.env.NODE_ENV === 'development'
 
-  const sliced = isDev ? items : items.slice(0, 3)
+  const sliced = isDev ? items : items.slice(0, 7)
 
   const tracks = sliced.map<TrackData>(track => ({
     artist: track.artists.map(_artist => _artist.name).join(', '),

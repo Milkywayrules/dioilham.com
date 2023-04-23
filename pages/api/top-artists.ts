@@ -34,7 +34,7 @@ export default async function handler(req: NextRequest) {
 
   const isDev = process.env.NODE_ENV === 'development'
 
-  const sliced = isDev ? items : items.slice(0, 7)
+  const sliced = isDev ? items : items.slice(0, 14)
 
   const artists = sliced.map<ArtistData>(
     ({ external_urls, followers, genres, name, images, popularity }) => ({
